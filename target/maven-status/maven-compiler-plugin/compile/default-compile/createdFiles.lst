@@ -1,1 +1,4 @@
 com\dbs\App.class
+com\dbs\config\WebConfig.class
+com\dbs\config\WebConfig$1.class
+com\dbs\TestController.class

@@ -1,13 +1,13 @@
 package com.dbs;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/api")
 public class TestController {
-    @GetMapping("/hello")
+    @GetMapping("/api")
     public String sayHello() {
         return "Hello, Spring Boot is running!";
     }
